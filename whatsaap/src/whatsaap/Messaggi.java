@@ -15,10 +15,12 @@ public class Messaggi {
        ArrayList<messaggio> Messaggi;
        int id;
        boolean comunicazione;
+       boolean stampato;
         public Messaggi() {
         id = 0;
         Messaggi = new ArrayList<messaggio>();
         comunicazione = false;
+        stampato=false;
     }
           public synchronized void aggiungi(String s, boolean tipo) {
         Messaggi.add(new messaggio(s, id++, tipo));
