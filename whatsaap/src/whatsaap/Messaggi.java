@@ -28,14 +28,14 @@ public class Messaggi {
           
           
        public messaggio controllo() {
-        messaggio m = new messaggio();
+        messaggio Messaggio = new messaggio();
         for (int i = 0; i < Messaggi.size(); i++) {
             if (!Messaggi.get(i).attessa) {
                 Messaggi.get(i).attessa = true;
                 return Messaggi.get(i);
             }
         }
-        return m;
+        return Messaggio;
     }      
           
           
